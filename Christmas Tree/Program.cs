@@ -10,10 +10,11 @@ namespace Christmas_Tree
     {
         static void Main(string[] args)
         {
-            for (int i = 0; i < 17; i++) 
+            for (int i = 0; i <= 16; i++) 
             {
                 for (int j = 0; j < 17; j++) 
                 {
+                    // Upper Half
                     if (i == 0)
                     {
                         if (j == 17 / 2)
@@ -58,6 +59,7 @@ namespace Christmas_Tree
                             Console.Write(" ");
                         }
                     }
+                    //Splitter of upper and lower half
                     if (i == 4 || i == 6)
                     {
                         if (j == 17 / 2 - 4 || j == 17 / 2 + 4)
@@ -80,6 +82,8 @@ namespace Christmas_Tree
                             Console.Write(" ");
                         }
                     }
+
+                    // Lower half
 
                     if (i == 8)
                     {
@@ -114,6 +118,7 @@ namespace Christmas_Tree
                             Console.Write(" ");
                         }
                     }
+                    //Stem
                     if (i == 11 || i == 12 || i == 13)
                     {
                         if (j == 11/2 || j == 23 / 2)
@@ -125,6 +130,7 @@ namespace Christmas_Tree
                         Console.Write(" "); 
                         }
                     }
+                    //Vase
                     if (i == 14)
                     {
                         if (j >= 9 / 2 && j <= 25 / 2)
@@ -148,17 +154,6 @@ namespace Christmas_Tree
                         }
                     }
                     if (i == 16)
-                    {
-                        if (j >= 13 / 2 && j <= 21 / 2)
-                        {
-                            Console.Write("*");
-                        }
-                        else
-                        {
-                            Console.Write(" ");
-                        }
-                    }
-                    if (i == 17)
                     {
                         if (j >= 13 / 2 && j <= 21 / 2)
                         {
